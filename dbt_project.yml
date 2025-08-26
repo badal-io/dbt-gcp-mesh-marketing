@@ -16,7 +16,7 @@ snapshot-paths:
 clean-targets:
   - target
   - dbt_packages
-profile: snowflake
+profile: default
 require-dbt-version: ">=1.6.0"
 models:
   jaffle_shop_mesh_marketing:

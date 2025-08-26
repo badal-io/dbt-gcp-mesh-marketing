@@ -17,19 +17,19 @@ models:
         data_type: text
         description: Customers' full name.
       - name: count_lifetime_orders
-        data_type: number
+        data_type: INT64
         description: Total number of orders a customer has ever placed.
       - name: first_ordered_at
-        data_type: timestamp_ntz
+        data_type: timestamp
         description: The timestamp when a customer placed their first order.
       - name: last_ordered_at
-        data_type: timestamp_ntz
+        data_type: timestamp
         description: The timestamp of a customer's most recent order.
       - name: lifetime_spend_pretax
-        data_type: number
+        data_type: FLOAT64
         description: The sum of all the pre-tax subtotals of every order a customer has placed.
       - name: lifetime_spend
-        data_type: number
+        data_type: FLOAT64
         description: The sum of all the order totals (including tax) that a customer has ever placed.
       - name: customer_type
         data_type: text
