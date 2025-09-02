@@ -1,0 +1,22 @@
+exposures:
+  - name: customers_data
+    label: customers_data
+    type: notebook
+    maturity: medium
+    url: https://console.cloud.google.com/bigquery?project=prj-s-dbt-mesh-eac8&ws=!1m0
+    depends_on:
+      - ref('customers')
+    owner:
+      name: John Doe
+
+  - name: locations_data
+    label: locations_data
+    type: notebook
+    maturity: high
+    url: https://console.cloud.google.com/bigquery?project=prj-s-dbt-mesh-eac8&ws=!1m4!1m3!3m2!1sprj-s-dbt-mesh-eac8!2sdbt_mn
+    depends_on:
+      - ref('locations')
+    owner:
+      name: John Doe
+
+  
